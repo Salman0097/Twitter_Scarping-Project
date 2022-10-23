@@ -65,7 +65,8 @@ def getTweets():
 					   file_name='Twitter_Data.csv',  # File name is set as Twitter_Data by default
 					   mime='text/csv'
 					   )
-	if st.button("Upload to DB"):
+
+	'''if st.button("Upload to DB"):
 
 		client = pymongo.MongoClient(**st.secrets["mongodb://localhost:27017/"])
 
@@ -81,7 +82,7 @@ def getTweets():
 		mydb = client["Twitter_Data"]
 
 		# Creating a collection and inserting the values
-		mydb.ScarppedTweets.insert_many(data)
+		mydb.ScarppedTweets.insert_many(data)'''
 
 # Creating the button to show the tweets respective to the search term
 if st.button("Show Tweets"):
